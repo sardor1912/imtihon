@@ -1,0 +1,112 @@
+.short{
+  margin-bottom: 150px;
+  
+  
+  &__box{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../../images/des-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__inner-box{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color:#FAFAFA;
+    max-width: 445px;
+    padding-top: 56px;
+    padding-right: 55px;
+  }
+
+  &__title{
+    width: 390px;
+    margin: 0;
+    margin-bottom: 53px;
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.446429px;
+    color: $color-darkblue;
+  }
+
+  &__button{
+    padding: 18px 16px;
+    padding-right: 32px;
+    background-color: $color-blue;
+    mix-blend-mode: normal;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $text-color;
+  }
+
+  &__icon{
+    width: 16px;
+    height: 12px;
+    margin-right: 32px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .short{
+    margin-bottom: 96px;
+
+    &__box{
+      background-image: url(../../images/tablet-bg.png);
+      width: 100%;
+    }
+
+    &__inner-box{
+      max-width: 668px;
+    }
+
+    &__title{
+      width: 458px;
+      font-size: 40px;
+      line-height: 42px;
+      letter-spacing: -0.357143px;
+      margin-bottom: 48px;
+    }
+  }
+}
+
+@media only screen and (max-width:375px){
+  .short{
+    margin-bottom: 0;
+
+    &__box{
+      background-image: url(../../images/b-mobile.png);
+      width: 100%;
+      height: 271px;
+      margin-bottom: 24px;
+    }
+
+    &__inner-box{
+      max-width: 311px;
+      padding: 0;
+      left: 0;
+      top: 297px;
+    }
+
+    &__title{
+      width: 311px;
+      font-size: 40px;
+      line-height: 42px;
+      letter-spacing: -0.357143px;
+      margin-bottom: 32px;
+    }
+  }
+}

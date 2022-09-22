@@ -1,0 +1,67 @@
+.interested{
+
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+
+  &__title{
+    margin: 0;
+    max-width: 350px;
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: $color-darkblue;
+  }
+
+  &__line{
+    max-width: 534px;
+    width: 534px;
+    height: 1px;
+    background-color: rgba(51, 50, 61, 0.15);
+  }
+
+  &__button{
+    @include button;
+  }
+
+  &__button:hover{
+    background-color: $color-darkblue;
+    color: $text-color;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .interested{
+    &__wrapper{
+      margin-bottom: 96px;
+    }
+
+    &__line{
+      width: 113px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .interested{
+    &__wrapper{
+      flex-direction: column;
+    }
+
+    &__title{
+      margin-bottom: 40px;
+      text-align: center;
+      max-width: 311px;
+    }
+  
+    &__line{
+      display: none;
+    }
+  }
+}
